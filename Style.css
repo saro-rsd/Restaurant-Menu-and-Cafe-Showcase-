@@ -44,10 +44,34 @@ img {
 }
 
 .features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 40px 20px;
+}
+
+.card {
+    width: 180px;
+    height: 180px;
+
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
 }
 
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 .card {
     display: inline-block;
     background: white;
