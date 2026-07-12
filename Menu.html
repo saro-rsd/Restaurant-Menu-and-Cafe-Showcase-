@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italian restaurant</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Matemasie&family=Ultra&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <div>
+    <div class="nav">
         <nav>
             <strong><a href="Home.html">Home</a></strong>
             <a href="Menu.html">Menu</a>
@@ -17,271 +27,385 @@
         </nav>
 
         <br>
-        <div>
+        <div class="search-cart">
             <input type="search" placeholder="🔎 Search for dishes...">
             <a href="Cart.html" class="cart-icon">🛒</a>
         </div>
     </div>
-    <div>
-        <h2>
+    <div class="menu-intro">
+        <h2 class="menu-intro-h2">
             Delivery Menu
         </h2>
-        <p>
+        <p class="menu-intro-p">
             Craving something delicious?
             Order online and have freshly prepared food and
             beverages delivered quickly and safely to your home or office.
         </p>
-        <h2>
+        <br>
+
+        <h2 class="menu-intro-h2">
             Menu
         </h2>
-        <p>
+        <p class="menu-intro-p">
             Discover our carefully crafted menu featuring freshly brewed coffee, delicious pastries, hearty meals,
             refreshing beverages, and delightful desserts. Every item is prepared with quality ingredients to give you
             the perfect café experience.
         </p>
     </div>
+    <br>
+    <br>
     <div>
-        <div>
-            <figure>
-                <img src="Assest/84770f_1ece8e5371664942a5c29798512a3667~mv2.avif"
-                    alt="★ Vegan Sweet Potato Tortellini">
-                <figcaption>
-                    <p>★ Vegan Sweet Potato Tortellini</p>
-                    Delectable tortellinis filled with sweet potatoes and herbs in a rich tomato and coconut cream
-                    sauce.
-                    <br><br>
-                    $12
-                </figcaption>
-            </figure>
+        <div class="grid">
+            <div class="card">
+                <figure>
+                    <img src="Assest/84770f_1ece8e5371664942a5c29798512a3667~mv2.avif"
+                        alt="★ Vegan Sweet Potato Tortellini" class="card-img">
+                    <figcaption>
+                        <div>
+                            <p>★ Vegan Sweet Potato Tortellini</p>
+                            <br>
+                            <div>
+                                <p class="p">
+                                    Delectable tortellinis filled with sweet potatoes and herbs in a rich tomato and
+                                    coconut
+                                    cream
+                                    sauce.
+                                </p>
+                            </div>
+                            <br><br>
+                            $12
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="Assest/84770f_3f19afd84a654449bd81c5edf6ee9551~mv2.avif" alt="★ Red Ravioli"
+                        class="card-img">
+                    <figcaption>
+                        <div>
+                            <div>
+                                <p>★ ★ Red Ravioli</p>
+                            </div>
+                            <br>
+                            <div class="p">
+                                Our beetroot ravioli filled with ricotta cheese in a butter beetroot sauce, sour cream
+                                and
+                                chives.
+                                <br><br>
+                                $14
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="Assest/84770f_4fe2e98f32f24202a22b315582bc7157~mv2.avif" alt="★ Pappardelle Primavera"
+                        class="card-img">
+                    <figcaption>
+                        <div>
+                            <div>
+                                <p>★ Pappardelle Primavera</p>
+                            </div>
+                            <br>
+                            <div class="p">
+                                Hearty, broad noodles with grilled seasonal vegetables and creme fraiche.
+                                <br><br>
+                                $16
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="Assest/84770f_d741cac17f844176961de0c92daacdcb~mv2.avif"
+                        alt="★ Truffle and Goat Cheese Ravioli" class="card-img">
+                    <figcaption>
+                        <div>
+                            <div>
+                                <p>★ Truffle and Goat Cheese Ravioli</p>
+                            </div>
+                            <br>
+                            <div class="p">
+                                Handmade truffle ravioli filled with fresh goat cheese and white wine cream sauce.
+                                <br><br>
+                                300 gr $15
+                                <br>
+                                400 gr $17
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="Assest/84770f_dc94819eb32340da8ff2f14e97489429~mv2.avif" alt="★ Spaghetti with Clams"
+                        class="card-img">
+                    <figcaption>
+                        <div>
+                            <div>
+                                <p>★ Spaghetti with Clams</p>
+                            </div>
+                            <br>
+                            <div class="p">
+                                Fresh spaghetti with a rustic tomato clam sauce.
+                                <br><br>
+                                $13
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="Assest/84770f_f13ea817ad9f44c78938437b6d1822be~mv2.avif"
+                        alt="★ Spaghetti with Cherry Tomato Marinara" class="card-img">
+                    <figcaption>
+                        <div>
+                            <div>
+                                <p>★ Spaghetti with Cherry Tomato Marinara</p>
+                            </div>
+                            <br>
+                            <div class="p">
+                                A classic dish with an added cherry tomato sweetness with parmesan cheese, olive oil and
+                                herbs.
+                                <br><br>
+                                $12
+                            </div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
-        <div>
-            <figure>
-                <img src="Assest/84770f_3f19afd84a654449bd81c5edf6ee9551~mv2.avif" alt="★ Red Ravioli">
-                <figcaption>
-                    <p>★ ★ Red Ravioli</p>
-                    Our beetroot ravioli filled with ricotta cheese in a butter beetroot sauce, sour cream and chives.
-                    <br><br>
-                    $14
-                </figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src="Assest/84770f_4fe2e98f32f24202a22b315582bc7157~mv2.avif" alt="★ Pappardelle Primavera">
-                <figcaption>
-                    <p>★ Pappardelle Primavera</p>
-                    Hearty, broad noodles with grilled seasonal vegetables and creme fraiche.
-                    <br><br>
-                    $16
-                </figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src="Assest/84770f_d741cac17f844176961de0c92daacdcb~mv2.avif"
-                    alt="★ Truffle and Goat Cheese Ravioli">
-                <figcaption>
-                    <p>★ Truffle and Goat Cheese Ravioli</p>
-                    Handmade truffle ravioli filled with fresh goat cheese and white wine cream sauce.
-                    <br><br>
-                    300 gr $15
-                    <br>
-                    400 gr $17
-                </figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src="Assest/84770f_dc94819eb32340da8ff2f14e97489429~mv2.avif" alt="★ Spaghetti with Clams">
-                <figcaption>
-                    <p>★ Spaghetti with Clams</p>
-                    Fresh spaghetti with a rustic tomato clam sauce.
-                    <br><br>
-                    $13
-                </figcaption>
-            </figure>
-        </div>
-        <div>
-            <figure>
-                <img src="Assest/84770f_f13ea817ad9f44c78938437b6d1822be~mv2.avif"
-                    alt="★ Spaghetti with Cherry Tomato Marinara">
-                <figcaption>
-                    <p>★ Spaghetti with Cherry Tomato Marinara</p>
-                    A classic dish with an added cherry tomato sweetness with parmesan cheese, olive oil and herbs.
-                    <br><br>
-                    $12
-                </figcaption>
-            </figure>
-        </div>
+
+        <br><br>
 
         <section>
-            <div>
-                <h1>Viennoiserie & Pastries</h1>
-                <p>
-                    Our take on the classics, hand-laminated over three days for exceptional flavour and texture.
-                </p>
-                <br>
-                <br>
-                <br>
-                <div>
-                    <h3>
-                        Classic Butter Croissant
-                    </h3>
-                    <p>
-                        Made with premium cultured butter from Pepe Saya, our croissant is flaky, airy, and deeply
-                        satisfying.
-                    </p>
+            <div class="menu-container">
+
+                <!-- SECTION 1: Viennoiserie & Pastries -->
+                <section class="menu-section">
+                    <h2>Viennoiserie & Pastries</h2>
+                    <p class="section-description">Our take on the classics, hand-laminated over three days for
+                        exceptional flavour and texture.</p>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Classic Butter Croissant</span>
+                                <span class="item-price">$5.50</span>
+                            </div>
+                            <p class="item-description">Made with premium cultured butter from Pepe Saya, our croissant
+                                is flaky, airy, and deeply satisfying.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Pain au Chocolat</span>
+                                <span class="item-price">$6.50</span>
+                            </div>
+                            <p class="item-description">Our butter croissant wrapped around two batons of rich, dark
+                                Valrhona chocolate.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Almond Croissant</span>
+                                <span class="item-price">$8.00</span>
+                            </div>
+                            <p class="item-description">Filled with a generous layer of house-made almond frangipane,
+                                topped with flaked almonds and a dusting of sugar.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Seasonal Fruit Danish</span>
+                                <span class="item-price">$7.50</span>
+                            </div>
+                            <p class="item-description">A rotating special featuring the best fruit from the local
+                                market, nestled in a bed of light vanilla bean crème pâtissière.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Cardamom & Cinnamon Scroll</span>
+                                <span class="item-price">$7.00</span>
+                            </div>
+                            <p class="item-description">Soft, pillowy dough swirled with aromatic cardamom and cinnamon,
+                                glazed to perfection.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: Hearth & Hand Breads -->
+                <section class="menu-section">
+                    <h2>Hearth & Hand Breads</h2>
+                    <p class="section-description">Slow-fermented for digestibility and complex flavour. Available after
+                        9 AM until sold out.</p>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Classic Sourdough Loaf</span>
+                                <span class="item-price">$9.50</span>
+                            </div>
+                            <p class="item-description">Our signature loaf. A beautiful open crumb with a crisp,
+                                blistered crust. Perfect for everything. Ingredients: Stone-ground baker's flour, whole
+                                wheat flour, filtered water, sea salt.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Seeded Whole Wheat Loaf</span>
+                                <span class="item-price">$10.00</span>
+                            </div>
+                            <p class="item-description">A hearty and wholesome loaf packed with sunflower, linseed,
+                                pumpkin, and sesame seeds for a nutty flavour and texture. Ingredients: Whole wheat
+                                flour, baker's flour, seed mix, filtered water, sea salt.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Light Rye Pan Loaf</span>
+                                <span class="item-price">$10.00</span>
+                            </div>
+                            <p class="item-description">A soft, sandwich-style loaf with the gentle tang of rye. Makes
+                                for the ultimate toast. Ingredients: Rye flour, baker's flour, filtered water, olive
+                                oil, sea salt.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: Cakes & Sweets -->
+                <section class="menu-section">
+                    <h2>Cakes & Sweets</h2>
+                    <p class="section-description">A little slice of joy, perfect for an afternoon pick-me-up or a
+                        lingering dessert.</p>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Basque Cheesecake (slice)</span>
+                                <span class="item-price">$9.00</span>
+                            </div>
+                            <p class="item-description">A beautifully rustic cheesecake with a caramelized, "burnt" top
+                                and a creamy, melt-in-your-mouth centre. Ingredients: Cream cheese, local free-range
+                                eggs, sugar, cream.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Lemon & Olive Oil Cake (slice)</span>
+                                <span class="item-price">$7.50</span>
+                            </div>
+                            <p class="item-description">A wonderfully moist and fragrant cake, naturally dairy-free,
+                                made with Australian olive oil and fresh lemon zest. Ingredients: Flour, sugar, local
+                                free-range eggs, olive oil, lemons.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Salted Brown Butter Cookie</span>
+                                <span class="item-price">$4.50</span>
+                            </div>
+                            <p class="item-description">The perfect cookie. Chewy on the inside, crisp on the edges,
+                                with nutty brown butter and flakes of sea salt. Ingredients: Flour, butter, brown sugar,
+                                local free-range eggs, vanilla, sea salt.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 4: Coffee & Beverages -->
+                <section class="menu-section">
+                    <h2>Coffee & Beverages</h2>
+                    <p class="section-description">Brewed with care to start your day right.</p>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Espresso</span>
+                                <span class="item-price">$3.50</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Latte / Flat White / Cappuccino</span>
+                                <span class="item-price">$4.50</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Batch Brew Filter Coffee</span>
+                                <span class="item-price">$4.00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <span class="item-name">Freshly Brewed Tea</span>
+                                <span class="item-price">$4.00</span>
+                            </div>
+                            <p class="item-description">(English Breakfast, Earl Grey, Peppermint, Green)</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+
+            <footer class="footer-container">
+                <div class="footer-content">
+                    <div class="contact-info">
+                        <h2 class="footer-heading">Made with love<br>by Insieme</h2>
+                        <p class="contact-details">
+                            123-456-7890<br>
+                            500 Terry Francine Street<br>
+                            San Francisco, CA 94158<br>
+                            info@mysite.com
+                        </p>
+                        <!-- Social Media Icons (FontAwesome හෝ සරලව text ලෙස) -->
+                        <div class="social-icons">
+                            <a href="#" aria-label="Instagram">📸</a>
+                            <a href="#" aria-label="Facebook">🇫</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <h3 class="form-heading">Contact Insieme</h3>
+
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First name *</label>
+                                    <input type="text" id="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last name *</label>
+                                    <input type="text" id="last-name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <input type="text" id="message">
+                            </div>
+
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+
                 </div>
-                <span>
-                    $5.50
-                </span>
-            </div>
 
-            <div>
-                <h3> Pain au Chocolat </h3>
-                <p>
-                    Our butter croissant wrapped around two batons of rich, dark Valrhona chocolate.
-                </p>
-                <span>
-                    $6.50
-                </span>
-            </div>
-            <div>
-                <h3>Almond Croissant</h3>
-                <p>
-                    Filled with a generous layer of house-made almond frangipane, topped with flaked almonds and a
-                    dusting
-                    of sugar.
-                </p>
-                <span>
-                    $8.00
-                </span>
-            </div>
-            <div>
-                <h3>Seasonal Fruit Danish</h3>
-                <p>
-                    A rotating special featuring the best fruit from the local market, nestled in a bed of light vanilla
-                    bean crème pâtissière.
-                </p>
-                <span>
-                    $7.50
-                </span>
-            </div>
-            <div>
-                <h3>Cardamom & Cinnamon Scroll</h3>
-                <p>
-                    Soft, pillowy dough swirled with aromatic cardamom and cinnamon, glazed to perfection.
-                </p>
-                <span>
-                    $7.00
-                </span>
-            </div>
-
-
-            <div>
-                <h1>Hearth & Hand Breads</h1>
-                <p>
-                    Slow-fermented for digestibility and complex flavour. Available after 9 AM until sold out.
-                </p>
-                <br>
-                <br>
-                <h3>Classic Sourdough Loaf</h3>
-                <p>
-                    Our signature loaf. A beautiful open crumb with a crisp, blistered crust. Perfect for everything.
-                    Ingredients: Stone-ground baker's flour, whole wheat flour, filtered water, sea salt.
-                </p>
-                <span>
-                    $9.50
-                </span>
-                <h3>Seeded Whole Wheat Loaf</h3>
-                <p>
-                    A hearty and wholesome loaf packed with sunflower, linseed, pumpkin, and sesame seeds for a nutty
-                    flavour and texture. Ingredients: Whole wheat flour, baker's flour, seed mix, filtered water, sea
-                    salt.
-                </p>
-                <span>
-                    $10.00
-                </span>
-                <h3>Light Rye Pan Loaf</h3>
-                <p>
-                    A soft, sandwich-style loaf with the gentle tang of rye. Makes for the ultimate toast. Ingredients:
-                    Rye flour, baker's flour, filtered water, olive oil, sea salt.
-                </p>
-                <span>
-                    $8.50
-                </span>
-            </div>
-
-            <div>
-                <h1>
-                    Cakes & Sweets</h1>
-                <p>A little slice of joy, perfect for an afternoon pick-me-up or a lingering dessert.</p>
-                <br>
-                <br>
-                <h3>Basque Cheesecake (slice)</h3>
-                <p>
-                    A beautifully rustic cheesecake with a caramelized, "burnt" top and a creamy, melt-in-your-mouth
-                    centre. Ingredients: Cream cheese, local free-range eggs, sugar, cream.
-                </p>
-                <span>
-                    $9.00
-                </span>
-                <h3>Lemon & Olive Oil Cake (slice)</h3>
-                <p>
-                    A wonderfully moist and fragrant cake, naturally dairy-free, made with Australian olive oil and
-                    fresh lemon zest. Ingredients: Flour, sugar, local free-range eggs, olive oil, lemons.
-                </p>
-                <span>
-                    $7.50
-                </span>
-                <h3>Salted Brown Butter Cookie</h3>
-                <p>
-                    The perfect cookie. Chewy on the inside, crisp on the edges, with nutty brown butter and flakes of
-                    sea salt. Ingredients: Flour, butter, brown sugar, local free-range eggs, vanilla, sea salt.
-                </p>
-                <span>
-                    $4.50
-                </span>
-            </div>
-
-            <div>
-                <h1>Coffee & Beverages</h1>
-                <p>Brewed with care to start your day right.</p>
-                <div>
-                    <h3>
-                        Espresso
-                    </h3>
-                    <span>
-                        $3.00
-                    </span>
-                    <h3>
-                        Latte / Flat White / Cappuccino
-                    </h3>
-                    <span>
-                        $4.50
-                    </span>
-                    <h3>Batch Brew Filter Coffee</h3>
-                    <span>
-                        $4.00
-                    </span>
-                    <h3>
-                        Freshly Brewed Tea
-                    </h3>
-                    <p>
-                        (English Breakfast, Earl Grey, Peppermint, Green)
-                        $4.00</p>
-                </div>
-            </div>
-        </section>
-
-        <div>
-            <fieldset>
-                <form>
-                    <legend>Order Now</legend>
-            </fieldset>
-        </div>
-
-
+            </footer>
 
 
 </body>
